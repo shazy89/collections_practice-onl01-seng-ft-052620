@@ -38,11 +38,11 @@ new_array.push new_word.join
      
  end
  
- def find_a(array)
-   array.find do |word| word.include?("a")
+def find_a(array)
+   array.select do |words| 
+    words.start_with?("a")
  end
  end
-
  
  
  
